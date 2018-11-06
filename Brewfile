@@ -41,6 +41,7 @@ cask 'aerial'                               # Apple TV Aerial screen saver
 cask 'alfred'                               # Alfred (great clipboard history)
 cask 'appcleaner'                           # App for deleting apps
 cask 'aware'                                # menu bar app to tell how long you've been using the mac
+cask 'brainfm'                              # generate music to help focus
 cask 'dash'                                 # Many developer documentations in one app with offline usage possible
 cask 'docker'                               # UI for virtualization containers management
 cask 'google-chrome'                        # browser
