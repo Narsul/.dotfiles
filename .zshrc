@@ -70,6 +70,9 @@ plugins=(
 # Enabling auto-switch of nvm based on .nvmrc
 export NVM_AUTO_USE=true
 
+# Set nano as a default editor
+export EDITOR=nano
+
 # Activate Oh-My-Zsh
 source $ZSH/oh-my-zsh.sh
 
