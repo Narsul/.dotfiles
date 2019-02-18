@@ -1,5 +1,8 @@
 #!/usr/bin/env bash
 
+# installing xcode dev tools
+xcode-select --install
+
 # Check for Homebrew and install if we don't have it
 if [ ! $(command -v brew) ]; then
   /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
@@ -10,7 +13,7 @@ brew update
 
 # Install all our dependencies with bundle (See Brewfile)
 brew tap homebrew/bundle
-brew bundle install --file $DOTFILES/Brewfile
+brew bundle install --file ${DOTFILES}/Brewfile
 
 # Cleanup brew
 brew cask cleanup
@@ -24,3 +27,6 @@ brew cleanup
 if [ ! -e "/Applications/Backblaze.app" ]; then
   open '/usr/local/Caskroom/backblaze/latest/Backblaze Installer.app'
 fi
+
+# start a service to rotate IAM access keys
+brew services start rhyeal/aws-rotate-iam-keys/aws-rotate-iam-keys

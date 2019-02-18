@@ -8,6 +8,7 @@ tap "homebrew/core"
 tap "homebrew/services"
 tap "neovim/neovim"
 tap "rogual/neovim-dot-app"
+tap "rhyeal/aws-rotate-iam-keys"
 
 # Java dependency
 cask "java"                                   # for working with internet banking and installing some dependencies
@@ -15,6 +16,7 @@ cask "java"                                   # for working with internet bankin
 # Install Binaries
 brew "awscli"                                 # AWS cli
 brew "aws-elasticbeanstalk"                   # AWS ElasticBeanstalk cli
+brew "aws-rotate-iam-keys"                    # script to automatically rotate IAM access keys
 # brew "docker"                                 # virtualization containers management
 brew "dnscrypt-proxy", restart_service: true  # allows using DNS via HTTPS
 brew "git"                                    # version controll system
@@ -67,6 +69,7 @@ cask "sip"                                    # color picking tool
 cask "sip2sip"                                # SIP voice calling
 cask "sizeup"                                 # arrang windows
 cask "skype"                                  # VoIP
+cask "slack"                                  # team communication tool
 cask "sourcetree"                             # git client
 cask "subler"                                 # edit video files
 cask "teamviewer"                             # remote control
@@ -116,7 +119,6 @@ mas "Keynote", id: 409183694                  # Apple keynotes editor
 mas "Mediunic", id: 1088945121                # medium client
 mas "Numbers", id: 409203825                  # Apple spreadsheets editor
 mas "Pages", id: 409201541                    # Apple rich text editor
-mas "Slack", id: 803453959                    # team communication tool
 mas "Spark", id: 1176895641                   # email client
 mas "The Unarchiver", id: 425424353           # archiving tool
 mas "UlyssesMac", id: 1225570693              # markdown editor
