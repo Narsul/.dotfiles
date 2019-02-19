@@ -8,7 +8,7 @@ tap "homebrew/core"
 tap "homebrew/services"
 tap "neovim/neovim"
 tap "rogual/neovim-dot-app"
-tap "rhyeal/aws-rotate-iam-keys"
+tap "rhyeal/aws-rotate-iam-keys", "https://github.com/rhyeal/aws-rotate-iam-keys"
 
 # Java dependency
 cask "java"                                   # for working with internet banking and installing some dependencies
