@@ -155,6 +155,7 @@ _zsh_nvm_revert() {
 }
 
 autoload -U add-zsh-hook
+
 _zsh_nvm_auto_use() {
   _zsh_nvm_has nvm_find_nvmrc || return
 
@@ -210,7 +211,6 @@ if [[ "$ZSH_NVM_NO_LOAD" != true ]]; then
     # Auto use nvm on chpwd
     [[ "$NVM_AUTO_USE" == true ]] && add-zsh-hook chpwd _zsh_nvm_auto_use && _zsh_nvm_auto_use
   fi
-
 fi
 
 # Make sure we always return good exit code

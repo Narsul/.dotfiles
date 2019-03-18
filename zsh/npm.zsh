@@ -1,4 +1,6 @@
 # load @onereach access token
-set -a
 source $HOME/.onereach/env
-set +a
+
+# add bash completion for or cli tool
+OR_ROOT=$(cat $HOME/.onereach/root)
+source ${OR_ROOT}/deploy-platform/scripts/_bash_completions.sh
