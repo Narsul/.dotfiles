@@ -6,8 +6,9 @@ tap "homebrew/cask-fonts"
 tap "homebrew/cask-versions"
 tap "homebrew/core"
 tap "homebrew/services"
-tap "neovim/neovim"
-tap "rogual/neovim-dot-app"
+tap "buo/cask-upgrade"
+# tap "neovim/neovim"
+# tap "rogual/neovim-dot-app"
 tap "rhyeal/aws-rotate-iam-keys", "https://github.com/rhyeal/aws-rotate-iam-keys"
 
 # Java dependency
@@ -24,8 +25,8 @@ brew "go"                                     # programming language
 brew "mackup"                                 # macOS config synchronization tool
 # brew "mongodb"                                # noSQL database
 brew "mas"                                    # allows to install apps from Apple AppStore
-brew "neovim"                                 # alternative editor to vim
-brew "neovim-dot-app"                         # saparate app for neovim
+# brew "neovim"                                 # alternative editor to vim
+# brew "neovim-dot-app"                         # saparate app for neovim
 brew "node"                                   # node.js engine
 brew "peco"                                   # powerful alternative to grep
 brew "phantomjs"                              # headless browser for automated testing
@@ -39,7 +40,7 @@ brew "zsh-autosuggestions"                    # zsh plugin to get suggestions wh
 brew "zsh-completions"                        # zsh plugin to simplify commands completion
 brew "zsh-history-substring-search"           # zsh plugin to navigate history easier
 brew "zsh-syntax-highlighting"                # zsh plugin
-brew "rogual/neovim-dot-app/neovim-dot-app"
+brew "rogual/neovim-dot-app/neovim-dot-app"   # app for rotation of AWS IAM access keys
 
 # Apps
 cask "aerial"                                 # Apple TV Aerial screen saver
@@ -48,7 +49,7 @@ cask "appcleaner"                             # App for deleting apps
 cask "aware"                                  # menu bar app to tell how long you've been using the mac
 cask "brainfm"                                # generate music to help focus
 cask "dash"                                   # Many developer documentations in one app with offline usage possible
-cask "docker"                                 # UI for virtualization containers management
+# cask "docker"                                 # UI for virtualization containers management
 cask "google-chrome"                          # browser
 # cask "go2shell"                               # open shell from Finder
 cask "gpg-suite"                              # GPG encryption tools
@@ -56,15 +57,15 @@ cask "grammarly"                              # spell checking
 cask "haptic-touch-bar"                       # haptic feedback for Macbook Pro Touch Bar
 # cask "insomnia"                               # http client
 cask "iterm2"                                 # terminal app
-cask "kindle"                                 # Kindle books client
-cask "mongodb"                                # noSQL database UI
-cask "muzzle"                                 # turn off notifications during screen sharing
+# cask "kindle"                                 # Kindle books client
+# cask "mongodb"                                # noSQL database UI
+# cask "muzzle"                                 # turn off notifications during screen sharing
 cask "phantomjs"                              # headless browser
 # cask "plex-media-player"                      # client for Plex media server
 cask "postman"                                # http client
-cask "raindropio"                             # bookmarks
+# cask "raindropio"                             # bookmarks
 cask "rescuetime"                             # time tracking app
-cask "robo-3t"                                # mongodb client
+# cask "robo-3t"                                # mongodb client
 cask "sip"                                    # color picking tool
 cask "sip2sip"                                # SIP voice calling
 cask "sizeup"                                 # arrang windows
@@ -73,8 +74,8 @@ cask "slack"                                  # team communication tool
 cask "sourcetree"                             # git client
 cask "subler"                                 # edit video files
 cask "teamviewer"                             # remote control
-cask "torbrowser"                             # browser to use tor network
-cask "transmission"                           # torrent client
+# cask "torbrowser"                             # browser to use tor network
+# cask "transmission"                           # torrent client
 cask "viber"                                  # messenger
 cask "visual-studio-code"                     # ide
 cask "vlc"                                    # video player
@@ -111,15 +112,15 @@ cask "font-source-serif-pro"
 
 # Install Mac App Store apps
 mas "1Password 7", id: 1333542190             # password manager
-mas "Agenda", id: 1287445660                  # work related markdown editor
+# mas "Agenda", id: 1287445660                  # work related markdown editor
 mas "Amphetamine", id: 937984704              # prevent laptop from sleeping
 mas "Day One", id: 1055511498                 # markdown based journalig app
 mas "Friendly Streaming", id: 553245401       # client for Netflix etc.
 mas "Keynote", id: 409183694                  # Apple keynotes editor
-mas "Mediunic", id: 1088945121                # medium client
+# mas "Mediunic", id: 1088945121                # medium client
 mas "Numbers", id: 409203825                  # Apple spreadsheets editor
 mas "Pages", id: 409201541                    # Apple rich text editor
-mas "Spark", id: 1176895641                   # email client
+# mas "Spark", id: 1176895641                   # email client
 mas "The Unarchiver", id: 425424353           # archiving tool
 mas "UlyssesMac", id: 1225570693              # markdown editor
 mas "UPRIGHT GO Desktop", id: 1404231964      # remined to sit straight
@@ -127,15 +128,15 @@ mas "Xcode", id: 497799835                    # Apple IDE
 
 # Paid Mac App Store apps
 mas "1Blocker", id: 1107421413                # ads blocker for safari
-mas "Caffeinated", id: 1362171212             # prevent screen from sleeping
+# mas "Caffeinated", id: 1362171212             # prevent screen from sleeping
 # mas "Deliveries", id: 924726344               # parcel delivery notifcations
 # mas "EyeFitness", id: 1114775590              # eye training app
 mas "Gestimer", id: 990588172                 # drag to add remined
-mas "IP Man", id: 1368026859                  # get info about public ip address
+# mas "IP Man", id: 1368026859                  # get info about public ip address
 mas "Just Press Record", id: 979561272        # dictaphone app
 mas "Medis", id: 1063631769                   # redis client
-mas "Monit", id: 1014850245                   # sidebar CPU/memory/... widget
-mas "Paste", id: 967805235                    # clipboard history
+# mas "Monit", id: 1014850245                   # sidebar CPU/memory/... widget
+# mas "Paste", id: 967805235                    # clipboard history
 mas "PDF Expert", id: 1055273043              # powerful PDF reader
 mas "Pixelmator Pro", id: 1289583905          # image editor
 mas "PopClip", id: 445189367                  # iOS style copy/paste menu
