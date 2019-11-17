@@ -21,7 +21,7 @@ source $DOTFILES/install/mackup &&
 
 # Set macOS preferences
 # We will run this last because this will reload the shell
-source $DOTFILES/install/macos
+source $DOTFILES/install/macos &&
 
-# 
-source $DOTFILES/install/aws
+# SetApp applications
+source $DOTFILES/install/setapp

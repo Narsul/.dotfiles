@@ -13,30 +13,32 @@ fi
 rm -rf $HOME/.zshrc
 ln -s $DOTFILES/.zshrc $HOME/.zshrc
 
-export ZSH=$HOME/.oh-my-zsh
-export ZSH_CUSTOM=$ZSH/custom
+mkdir -p $HOME/.zsh/cache
+s
+# export ZSH=$HOME/.oh-my-zsh
+# export ZSH_CUSTOM=$ZSH/custom
 
-# Installing oh-my-zsh
-if [ ! -e "$ZSH" ]; then
-  echo "Installing oh-my-zsh..."
-  git clone https://github.com/robbyrussell/oh-my-zsh.git "$ZSH"
-fi
+# # Installing oh-my-zsh
+# if [ ! -e "$ZSH" ]; then
+#   echo "Installing oh-my-zsh..."
+#   git clone https://github.com/robbyrussell/oh-my-zsh.git "$ZSH"
+# fi
 
-# Installing spaceship-prompt theme
-if [ ! -e "$ZSH_CUSTOM/themes/spaceship-prompt" ]; then
-  echo "Installing spaceship-prompt zsh theme..."
-  git clone https://github.com/denysdovhan/spaceship-prompt.git "$ZSH_CUSTOM/themes/spaceship-prompt"
-  ln -s "$ZSH_CUSTOM/themes/spaceship-prompt/spaceship.zsh-theme" "$ZSH_CUSTOM/themes/spaceship.zsh-theme"
-fi
+# # Installing spaceship-prompt theme
+# if [ ! -e "$ZSH_CUSTOM/themes/spaceship-prompt" ]; then
+#   echo "Installing spaceship-prompt zsh theme..."
+#   git clone https://github.com/denysdovhan/spaceship-prompt.git "$ZSH_CUSTOM/themes/spaceship-prompt"
+#   ln -s "$ZSH_CUSTOM/themes/spaceship-prompt/spaceship.zsh-theme" "$ZSH_CUSTOM/themes/spaceship.zsh-theme"
+# fi
 
-# Creating symlinks for zsh extensions
-for file in $DOTFILES/zsh/*.zsh; do
-  [ -e "$file" ] || continue
-  extension=$(basename $file)
-  # if extension is not linked yet
-  if [ ! -e "$ZSH_CUSTOM/$extension" ]; then
-    # link it
-    echo "Linking zsh extension $extension..."
-    ln -s "$DOTFILES/zsh/$extension" "$ZSH_CUSTOM/$extension"
-  fi
-done
+# # Creating symlinks for zsh extensions
+# for file in $DOTFILES/zsh/*.zsh; do
+#   [ -e "$file" ] || continue
+#   extension=$(basename $file)
+#   # if extension is not linked yet
+#   if [ ! -e "$ZSH_CUSTOM/$extension" ]; then
+#     # link it
+#     echo "Linking zsh extension $extension..."
+#     ln -s "$DOTFILES/zsh/$extension" "$ZSH_CUSTOM/$extension"
+#   fi
+# done

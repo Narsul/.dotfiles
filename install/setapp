@@ -1,0 +1,16 @@
+#!/usr/bin/env bash
+
+echo "+-----------------------------+"
+echo "| Install SetApp applications |"
+echo "+-----------------------------+"
+echo " * BetterTouchTool  https://setapp.com/apps/bettertouchtool"
+echo " * Folx             https://setapp.com/apps/folx"
+echo " * Gifox            https://setapp.com/apps/gifox"
+echo " * iFlicks          https://setapp.com/apps/iflicks"
+echo " * JustStream       https://setapp.com/apps/juststream"
+echo " * Proxyman         https://setapp.com/apps/proxyman"
+echo " * ToothFairy       https://setapp.com/apps/toothfairy"
+echo " * TripMode         https://setapp.com/apps/tripmode"
+echo " * WiFi Explorer    https://setapp.com/apps/wifi-explorer"
+echo " * SideNotes        https://setapp.com/apps/sidenotes"
+echo " * Slidepad         https://setapp.com/apps/slidepad"
