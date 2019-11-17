@@ -1,6 +1,9 @@
 # Path to your dotfiles installation.
 export DOTFILES=$HOME/.dotfiles
 
+# load @onereach access token
+source ${HOME}/.onereach/env
+
 # Path to your oh-my-zsh installation.
 export ZSH=$HOME/.oh-my-zsh
 
@@ -80,6 +83,9 @@ fpath=($(brew --prefix)/share/zsh-completions $fpath)
 source $(brew --prefix)/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 source $(brew --prefix)/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh           # MUST be last sourced plugin
 source $(brew --prefix)/share/zsh-history-substring-search/zsh-history-substring-search.zsh # has to be AFTER zsh-syntax-highlighting O_O
+
+# add bash completion for or cli tool
+source ${OR_ROOT}/deploy-platform/scripts/_bash_completions.sh
 
 # Configuring zsh-history-substring-search plugin
 bindkey '^[[A' history-substring-search-up
