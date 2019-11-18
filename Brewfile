@@ -8,40 +8,32 @@ tap "homebrew/core"
 tap "homebrew/services"
 tap "buo/cask-upgrade"
 tap "getantibody/tap"
-# tap "neovim/neovim"
-# tap "rogual/neovim-dot-app"
 tap "rhyeal/aws-rotate-iam-keys", "https://github.com/rhyeal/aws-rotate-iam-keys"
 
 # Java dependency
 cask "java"                                   # for working with internet banking and installing some dependencies
 
 # Install Binaries
-brew "antibody"                               # ZSH plugin manager
-brew "awscli"                                 # AWS cli
-brew "aws-elasticbeanstalk"                   # AWS ElasticBeanstalk cli
-brew "aws-rotate-iam-keys"                    # script to automatically rotate IAM access keys
-# brew "docker"                                 # virtualization containers management
-brew "dnscrypt-proxy", restart_service: true  # allows using DNS via HTTPS
-brew "git"                                    # version controll system
-brew "go"                                     # programming language
-brew "mackup"                                 # macOS config synchronization tool
-# brew "mongodb"                                # noSQL database
-brew "mas"                                    # allows to install apps from Apple AppStore
-# brew "neovim"                                 # alternative editor to vim
-# brew "neovim-dot-app"                         # saparate app for neovim
-# brew "node"                                   # node.js engine
-brew "peco"                                   # powerful alternative to grep
-brew "redis"                                  # in memory key value database
-brew "trash"                                  # allow to "Send to trash" from commands line
-brew "tree"                                   # show file tree
-brew "watchman"                               # needed for watch operations in node projects
-brew "wget"                                   # download client
-# brew "zsh"                                    # shell alternative to bash
-brew "zsh-autosuggestions"                    # zsh plugin to get suggestions while typing commands
-brew "zsh-completions"                        # zsh plugin to simplify commands completion
-brew "zsh-history-substring-search"           # zsh plugin to navigate history easier
-brew "zsh-syntax-highlighting"                # zsh plugin
-# brew "rogual/neovim-dot-app/neovim-dot-app"   # app for rotation of AWS IAM access keys
+brew "antibody"                                   # ZSH plugin manager
+brew "awscli"                                     # AWS cli
+brew "aws-elasticbeanstalk"                       # AWS ElasticBeanstalk cli
+brew "aws-rotate-iam-keys", restart_service: true # script to automatically rotate IAM access keys
+# brew "docker"                                     # virtualization containers management
+brew "dnscrypt-proxy", restart_service: true      # allows using DNS via HTTPS
+brew "git"                                        # version controll system
+brew "go"                                         # programming language
+brew "mackup"                                     # macOS config synchronization tool
+# brew "mongodb"                                    # noSQL database
+brew "mas"                                        # allows to install apps from Apple AppStore
+# brew "node"                                       # node.js engine
+brew "peco"                                       # powerful alternative to grep
+brew "redis"                                      # in memory key value database
+brew "terminal-notifier"                          # required by marzocchi/zsh-notify plugin
+brew "trash"                                      # allow to "Send to trash" from commands line
+brew "tree"                                       # show file tree
+brew "watchman"                                   # needed for watch operations in node projects
+brew "wget"                                       # download client
+# brew "zsh"                                        # shell alternative to bash
 
 # Apps
 cask "1password-cli"                          # 1password CLI tool
@@ -128,6 +120,7 @@ mas "1Password 7", id: 1333542190             # password manager
 # mas "Agenda", id: 1287445660                  # work related markdown editor
 mas "Amphetamine", id: 937984704              # prevent laptop from sleeping
 mas "Day One", id: 1055511498                 # markdown based journalig app
+mas "DuckDuckGo", id: 1482920575              # plugin for Safari
 mas "Friendly Streaming", id: 553245401       # client for Netflix etc.
 mas "Gestimer", id: 990588172                 # timer
 mas "Grammarly for Safari", id: 1462114288    # spellcheck Safari plugin
@@ -145,7 +138,6 @@ mas "UPRIGHT GO Desktop", id: 1404231964      # remined to sit straight
 
 # Paid Mac App Store apps
 mas "1Blocker", id: 1107421413                # ads blocker for safari
-# mas "Caffeinated", id: 1362171212             # prevent screen from sleeping
 # mas "Deliveries", id: 924726344               # parcel delivery notifcations
 mas "Disconnect Premium", id: 1333277187      # AD blocker
 # mas "EyeFitness", id: 1114775590              # eye training app

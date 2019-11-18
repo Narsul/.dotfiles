@@ -1,3 +1,6 @@
+## super user alias
+alias _='sudo '
+
 # Shortcuts
 alias copyssh="pbcopy < $HOME/.ssh/id_rsa.pub"
 alias reloadcli="source $HOME/.zshrc"
