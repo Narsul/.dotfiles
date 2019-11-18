@@ -14,7 +14,7 @@ rm -rf $HOME/.zshrc
 ln -s $DOTFILES/.zshrc $HOME/.zshrc
 
 mkdir -p $HOME/.zsh/cache
-s
+
 # export ZSH=$HOME/.oh-my-zsh
 # export ZSH_CUSTOM=$ZSH/custom
 

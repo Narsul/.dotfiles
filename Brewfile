@@ -7,6 +7,7 @@ tap "homebrew/cask-versions"
 tap "homebrew/core"
 tap "homebrew/services"
 tap "buo/cask-upgrade"
+tap "getantibody/tap"
 # tap "neovim/neovim"
 # tap "rogual/neovim-dot-app"
 tap "rhyeal/aws-rotate-iam-keys", "https://github.com/rhyeal/aws-rotate-iam-keys"
@@ -15,6 +16,7 @@ tap "rhyeal/aws-rotate-iam-keys", "https://github.com/rhyeal/aws-rotate-iam-keys
 cask "java"                                   # for working with internet banking and installing some dependencies
 
 # Install Binaries
+brew "antibody"                               # ZSH plugin manager
 brew "awscli"                                 # AWS cli
 brew "aws-elasticbeanstalk"                   # AWS ElasticBeanstalk cli
 brew "aws-rotate-iam-keys"                    # script to automatically rotate IAM access keys
@@ -40,7 +42,6 @@ brew "zsh-completions"                        # zsh plugin to simplify commands 
 brew "zsh-history-substring-search"           # zsh plugin to navigate history easier
 brew "zsh-syntax-highlighting"                # zsh plugin
 # brew "rogual/neovim-dot-app/neovim-dot-app"   # app for rotation of AWS IAM access keys
-brew "getantibody/tap/antibody"               # zsh plugin manager
 
 # Apps
 cask "1password-cli"                          # 1password CLI tool
