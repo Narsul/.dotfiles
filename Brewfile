@@ -43,6 +43,7 @@ cask "appcleaner"                             # App for deleting apps
 cask "aware"                                  # menu bar app to tell how long you've been using the mac
 cask "bitbar"                                 # toolbar apps
 cask "brainfm"                                # generate music to help focus
+cask "brave-browser"                          # Chromium based browser
 cask "calibre"                                # ebooks app
 cask "dash"                                   # Many developer documentations in one app with offline usage possible
 # cask "docker"                                 # UI for virtualization containers management
