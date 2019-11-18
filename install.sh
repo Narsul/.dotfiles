@@ -14,7 +14,7 @@ source $DOTFILES/install/brew &&
 source $DOTFILES/install/zsh &&
 
 # Set NVM with needed versions and global npm packages
-source $DOTFILES/install/nvm &&
+# source $DOTFILES/install/nvm &&
 
 # Restore application configs
 source $DOTFILES/install/mackup &&

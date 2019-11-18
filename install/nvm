@@ -1,28 +1,30 @@
 #!/usr/bin/env bash
 
 # I need to find better way to run these commands with zsh-nvm plugin
-$(which zsh) -c "
-# Loading zsh-nvm plugin
-source "${DOTFILES:-${HOME}/.dotfiles}/zsh/zsh-nvm.plugin.zsh"
 
-# installing node versions
-nvm install 4.3.2
-nvm install 8.11
+# $(which zsh) -c "
 
-nvm alias default 8.11
+# # Loading zsh-nvm plugin
+# # source "${DOTFILES:-${HOME}/.dotfiles}/zsh/zsh-nvm.plugin.zsh"
 
-# installing global npm packages for node 4
-nvm use 4 &&
-npm install -g serverless@0.5.6 &&   # old serverless framework
+# # installing node versions
+# nvm install 4.3.2
+# nvm install 8.11
 
-# installing global npm packages for node 8.11
-nvm use 8.11 &&
-npm install -g npm@latest &&         # latest npm
-npm install -g npm-check &&          # package versions management tool
-npm install -g @vue/cli vue-cli &&   # vue.js setup templates
-npm install -g http-server           # static http server
-npm install -g docsify               # documentation engine
-npm install -g serverless            # serverless framework
+# nvm alias default 8.11
 
-npx npm-merge-driver install -g      # npm extension to help resolve conflicts in package-lock.json automaticvally
-"
+# # installing global npm packages for node 4
+# nvm use 4 &&
+# npm install -g serverless@0.5.6 &&   # old serverless framework
+
+# # installing global npm packages for node 8.11
+# nvm use 8.11 &&
+# npm install -g npm@latest &&         # latest npm
+# npm install -g npm-check &&          # package versions management tool
+# npm install -g @vue/cli vue-cli &&   # vue.js setup templates
+# npm install -g http-server           # static http server
+# npm install -g docsify               # documentation engine
+# npm install -g serverless            # serverless framework
+
+# npx npm-merge-driver install -g      # npm extension to help resolve conflicts in package-lock.json automaticvally
+# "

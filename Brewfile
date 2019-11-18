@@ -74,7 +74,7 @@ cask "protonvpn"                              # VPN service
 cask "rescuetime"                             # time tracking app
 # cask "robo-3t"                                # mongodb client
 # cask "sip"                                    # color picking tool
-cask "sip2sip"                                # SIP voice calling
+# cask "sip2sip"                                # SIP voice calling
 # cask "sizeup"                                 # arrang windows
 cask "skype"                                  # VoIP
 cask "slack"                                  # team communication tool

@@ -15,14 +15,6 @@ brew update
 brew tap homebrew/bundle
 brew bundle install --file ${DOTFILES}/Brewfile
 
-# Cleanup brew
-brew cask cleanup
-brew cleanup
-
-# linking apps
-# TODO: fix app in a different way
-# brew linkapps neovim-dot-app
-
 # Running instalation of backblaze
 if [ ! -e "/Applications/Backblaze.app" ]; then
   open '/usr/local/Caskroom/backblaze/latest/Backblaze Installer.app'
