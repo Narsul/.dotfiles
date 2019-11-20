@@ -34,18 +34,14 @@ export EDITOR="nano"
 # Path to your dotfiles installation.
 export DOTFILES=${HOME}/.dotfiles
 
-# load @onereach access token
-if [ -f "${HOME}/.onereach/env" ]; then
-  source "${HOME}/.onereach/env"
-fi
+# load @onereach env variables
+[ -f "${HOME}/.onereach/env" ] && source "${HOME}/.onereach/env"
 
 export ZSH_CACHE_DIR="${HOME}/.zsh/cache"
 
 # NVM options
 export NVM_AUTO_USE=true
-if [ "$ELECTRON_RUN_AS_NODE" != "1" ]; then
- export NVM_LAZY_LOAD=true
-fi
+# [ "$ELECTRON_RUN_AS_NODE" != "1" ] && export NVM_LAZY_LOAD=true
 
 # loading dotfiles zsh extensions
 for file in ${DOTFILES}/zsh/*.zsh; do
