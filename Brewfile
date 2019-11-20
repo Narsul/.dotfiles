@@ -47,7 +47,7 @@ cask "brave-browser"                          # Chromium based browser
 cask "calibre"                                # ebooks app
 cask "dash"                                   # Many developer documentations in one app with offline usage possible
 # cask "docker"                                 # UI for virtualization containers management
-cask "google-chrome"                          # browser
+# cask "google-chrome"                          # browser
 # cask "go2shell"                               # open shell from Finder
 cask "goofy"                                  # facebook messenger
 cask "gfxcardstatus"                          # what graphic card is being used atm
