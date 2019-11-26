@@ -66,6 +66,7 @@ cask "protonvpn"                              # VPN service
 # cask "raindropio"                             # bookmarks
 cask "rescuetime"                             # time tracking app
 # cask "robo-3t"                                # mongodb client
+cask "session-manager-plugin"                 # AWS SSM SessionManager plugin
 # cask "sip"                                    # color picking tool
 # cask "sip2sip"                                # SIP voice calling
 # cask "sizeup"                                 # arrang windows
