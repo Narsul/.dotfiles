@@ -82,6 +82,7 @@ cask "viber"                                  # messenger
 cask "visual-studio-code"                     # ide
 cask "vlc"                                    # video player
 cask "waltr"                                  # transfer videos to iPhone
+cask "webex-meetings"                         # Cisco Webex Metting client
 cask "zoomus"                                 # VoIP
 
 # Paid apps
