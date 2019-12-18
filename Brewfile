@@ -37,6 +37,7 @@ brew "wget"                                       # download client
 
 # Apps
 cask "1password-cli"                          # 1password CLI tool
+cask "abstract"                               # Sketch VCS tool
 cask "aerial"                                 # Apple TV Aerial screen saver
 cask "alfred"                                 # Alfred (great clipboard history)
 cask "appcleaner"                             # App for deleting apps
@@ -62,7 +63,6 @@ cask "iterm2"                                 # terminal app
 # cask "phantomjs"                              # headless browser
 # cask "plex-media-player"                      # client for Plex media server
 cask "postman"                                # http client
-cask "protonmail-bridge"                      # mail client adapter for proton mail
 cask "protonvpn"                              # VPN service
 # cask "raindropio"                             # bookmarks
 cask "rescuetime"                             # time tracking app
