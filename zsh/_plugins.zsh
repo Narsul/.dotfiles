@@ -31,3 +31,7 @@ $(antibody bundle zsh-users/zsh-autosuggestions)
 $(antibody bundle zsh-users/zsh-apple-touchbar)
 $(antibody bundle zsh-users/zsh-syntax-highlighting)                                      # MUST be last sourced plugin
 $(antibody bundle zsh-users/zsh-history-substring-search)                                 # has to be AFTER zsh-syntax-highlighting O_O
+
+# Configuring zsh-history-substring-search plugin
+bindkey '^[[A' history-substring-search-up
+bindkey '^[[B' history-substring-search-down
