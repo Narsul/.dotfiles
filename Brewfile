@@ -9,6 +9,7 @@ tap "homebrew/services"
 tap "buo/cask-upgrade"
 tap "getantibody/tap"
 tap "rhyeal/aws-rotate-iam-keys", "https://github.com/rhyeal/aws-rotate-iam-keys"
+tap "fabianishere/personal/pam_reattach"
 
 # Java dependency
 cask "java"                                   # for working with internet banking and installing some dependencies
@@ -26,6 +27,7 @@ brew "mackup"                                     # macOS config synchronization
 # brew "mongodb"                                    # noSQL database
 brew "mas"                                        # allows to install apps from Apple AppStore
 # brew "node"                                       # node.js engine
+brew "pam_reattach"                               # ability to use touch ID instead of password for sudo
 brew "peco"                                       # powerful alternative to grep
 brew "redis"                                      # in memory key value database
 brew "terminal-notifier"                          # required by marzocchi/zsh-notify plugin

@@ -22,3 +22,6 @@ fi
 
 # start a service to rotate IAM access keys
 brew services start rhyeal/aws-rotate-iam-keys/aws-rotate-iam-keys
+
+# prepend changes for par_reattach in /etc/pam.d/sudo
+echo -e "# --- [start] pam_reattach changes\nauth       optional       pam_reattach.so\nauth       sufficient     pam_tid.so\n# --- [end] parm_reattach changes\n$(cat /etc/pam.d/sudo)" | sudo tee /etc/pam.d/sudo
