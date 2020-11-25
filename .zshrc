@@ -2,15 +2,19 @@
 # zmodload zsh/zprof
 
 # load completion system
-autoload -Uz compinit
-typeset -i updated_at=$(date +'%j' -r ~/.zcompdump 2>/dev/null || stat -f '%Sm' -t '%j' ~/.zcompdump 2>/dev/null)
-if [ $(date +'%j') != $updated_at ]; then
-  compinit -i
-else
-  compinit -C -i
-fi
+if type brew &>/dev/null; then
+  FPATH=$(brew --prefix)/share/zsh-completions:$FPATH
 
-zmodload -i zsh/complist
+  autoload -Uz compinit
+  typeset -i updated_at=$(date +'%j' -r ~/.zcompdump 2>/dev/null || stat -f '%Sm' -t '%j' ~/.zcompdump 2>/dev/null)
+  if [ $(date +'%j') != $updated_at ]; then
+    compinit -i
+  else
+    compinit -C -i
+  fi
+
+  zmodload -i zsh/complist
+fi
 
 # Options
 setopt hist_ignore_all_dups   # remove older duplicate entries from history
@@ -38,6 +42,10 @@ export DOTFILES=${HOME}/.dotfiles
 [ -f "${HOME}/.onereach/env" ] && source "${HOME}/.onereach/env"
 
 export ZSH_CACHE_DIR="${HOME}/.zsh/cache"
+
+# set npm installer for npm-check to be pnpm
+# export NPM_CHECK_INSTALLER=pnpm
+export NPM_CHECK_INSTALLER=npm
 
 # NVM options
 export NVM_AUTO_USE=true
