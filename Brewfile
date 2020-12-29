@@ -27,9 +27,11 @@ brew "mackup"                                     # macOS config synchronization
 # brew "mongodb"                                    # noSQL database
 brew "mas"                                        # allows to install apps from Apple AppStore
 # brew "node"                                       # node.js engine
+brew "packer"                                     # create AWS AMI images
 brew "pam_reattach"                               # ability to use touch ID instead of password for sudo
 brew "peco"                                       # powerful alternative to grep
 brew "redis"                                      # in memory key value database
+brew "terraform"                                  # framework for cloud blueprints
 brew "terminal-notifier"                          # required by marzocchi/zsh-notify plugin
 brew "trash"                                      # allow to "Send to trash" from commands line
 brew "tree"                                       # show file tree
@@ -59,6 +61,7 @@ cask "grammarly"                              # spell checking
 cask "haptic-touch-bar"                       # haptic feedback for Macbook Pro Touch Bar
 # cask "insomnia"                               # http client
 cask "iterm2"                                 # terminal app
+cask "keybase"                                  # app for PGP encryption of data
 # cask "kindle"                                 # Kindle books client
 # cask "mongodb"                                # noSQL database UI
 # cask "muzzle"                                 # turn off notifications during screen sharing
