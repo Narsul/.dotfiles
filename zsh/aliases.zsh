@@ -34,3 +34,5 @@ alias library="cd $HOME/Library"
 alias gst="git status"
 alias gd="git diff"
 alias gl="git log --oneline --decorate --color"
+
+alias touchsudo="echo -e \"# --- [start] dotfiles changes\nauth       optional       pam_reattach.so\nauth       sufficient     pam_tid.so\n# --- [end] dotfiles changes\n\$(cat /etc/pam.d/sudo)\" | sudo tee /etc/pam.d/sudo"
